@@ -8,6 +8,15 @@ body {
   font-family: 'Poppins', serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -43,7 +52,7 @@ nav {
   font-family: 'Poppins';
   font-weight: 700;
   color: #f5980c;
-  width: 72px;
+  padding: 0 16px;
   height: 32px;
   border-radius: 16px;
   border: none;
@@ -75,7 +84,6 @@ nav {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  margin: 0;
 }
 
 .hero .image h2 {
@@ -83,7 +91,6 @@ nav {
   color: white;
   font-size: 48px;
   font-weight: 400;
-  margin: 0;
 }
 
 .hero .image p {
@@ -92,6 +99,43 @@ nav {
   font-size: 24px;
   font-weight: 400;
   font-style: italic;
-  margin: 0;
   margin-top: calc(5%);
+}
+
+.about-us {
+  background-color: #f5980c;
+  padding: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10%;
+}
+
+.about-us .left p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  font-style: italic;
+  font-family: 'Times New Roman';
+  margin-bottom: 15%;
+}
+
+.about-us .left h2 {
+  font-family: 'Lily Script One', system-ui;
+  font-size: 90px;
+  font-weight: 400;
+  color: white;
+}
+
+.about-us .left p {
+  font-size: 18px;
+  color: white;
+  font-family: 'Times New Roman';
+  text-align: left;
+}
+.about-us .left button {
+  margin-top: 30%;
+}
+
+.about-us .right {
+  width: 100%;
 }
